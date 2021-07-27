@@ -72,7 +72,7 @@ export default function Nitroglicerina() {
 	const { peso } = useAuth();
 	const { mlhAtual } = useAuth();
 
-	const [VolumeDeDroga, setVolumeDeDroga] = useState(10);
+	const [VolumeDeDroga, setVolumeDeDroga] = useState(2);
 	const [VolumeTotal, setVolumeTotal] = useState(250);
 	const [ConcentracaoAmpola, setConcentracaoAmpola] = useState(5);
 	const [DoseMin] = useState(5);
