@@ -104,27 +104,21 @@ export default function Redcalc() {
 	return (
 		<View>
 			<div className={classes.inputCard}>
-				<span className={classes.titulo}>
-					<center>Calculando para:</center>
-				</span>
-				<div className={classes.inputGeral}>
-					<div className={classes.inputTexto}>
-						<center>
-							Peso
-							<input
-								type="number"
-								className={classes.input}
-								min={40}
-								max={150}
-								step={1}
-								value={peso}
-								maxLength={3}
-								onChange={(e) => setPeso(e.target.value)}
-							/>{" "}
-							kg
-						</center>
-					</div>
-				</div>
+				<center className={classes.titulo}>Calculando para:</center>
+				<center className={classes.titulo}>
+					Peso
+					<input
+						type="number"
+						className={classes.input}
+						min={40}
+						max={150}
+						step={1}
+						value={peso}
+						maxLength={3}
+						onChange={(e) => setPeso(e.target.value)}
+					/>{" "}
+					kg
+				</center>
 			</div>
 			<ScrollView>
 				<AppBar position="static">
