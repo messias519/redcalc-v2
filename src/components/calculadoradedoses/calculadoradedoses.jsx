@@ -68,9 +68,9 @@ export default function CalculadoraDeDoses() {
 		<View>
 			<div>
 				<div className={classes.root}>
-					<span className={classes.titulo}>Drogas</span> <br />
+					<div className={classes.titulo}>Drogas</div> <br />
 					<div>
-						<span className={classes.selecionepeso}>
+						<div className={classes.selecionepeso}>
 							Selecione a velocidade:
 							<input
 								type="number"
@@ -83,7 +83,7 @@ export default function CalculadoraDeDoses() {
 								onChange={(e) => setmlhAtual(e.target.value)}
 							/>{" "}
 							ml/h
-						</span>
+						</div>
 					</div>
 					<br />
 					<ScrollView>

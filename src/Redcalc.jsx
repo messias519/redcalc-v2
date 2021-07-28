@@ -107,24 +107,22 @@ export default function Redcalc() {
 				<span>
 					<center className={classes.titulo}>Calculando para:</center>
 				</span>
-				<table className={classes.inputGeral}>
-					<tr>
-						<td className={classes.inputTexto}>Peso</td>
-						<td>
-							<input
-								type="number"
-								className={classes.input}
-								min={40}
-								max={150}
-								step={1}
-								value={peso}
-								maxLength={3}
-								onChange={(e) => setPeso(e.target.value)}
-							/>{" "}
-							kg
-						</td>
-					</tr>
-				</table>
+				<div className={classes.inputGeral}>
+					<div className={classes.inputTexto}>
+						Peso
+						<input
+							type="number"
+							className={classes.input}
+							min={40}
+							max={150}
+							step={1}
+							value={peso}
+							maxLength={3}
+							onChange={(e) => setPeso(e.target.value)}
+						/>{" "}
+						kg
+					</div>
+				</div>
 			</div>
 			<ScrollView>
 				<AppBar position="static">
@@ -146,7 +144,6 @@ export default function Redcalc() {
 			<TabPanel value={value} index={1}>
 				Item Two
 			</TabPanel>
-			<div></div>
 		</View>
 	);
 }
