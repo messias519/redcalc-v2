@@ -72,17 +72,19 @@ export default function CalculadoraDeDoses() {
 					<div>
 						<div className={classes.selecionepeso}>
 							Selecione a velocidade:
-							<input
-								type="number"
-								className={classes.input}
-								min={1}
-								max={200}
-								step={1}
-								value={mlhAtual}
-								maxLength={3}
-								onChange={(e) => setmlhAtual(e.target.value)}
-							/>{" "}
-							ml/h
+							<center>
+								<input
+									type="number"
+									className={classes.input}
+									min={1}
+									max={200}
+									step={1}
+									value={mlhAtual}
+									maxLength={3}
+									onChange={(e) => setmlhAtual(e.target.value)}
+								/>{" "}
+								ml/h
+							</center>
 						</div>
 					</div>
 					<br />

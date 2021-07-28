@@ -104,23 +104,25 @@ export default function Redcalc() {
 	return (
 		<View>
 			<div className={classes.inputCard}>
-				<span>
-					<center className={classes.titulo}>Calculando para:</center>
+				<span className={classes.titulo}>
+					<center>Calculando para:</center>
 				</span>
 				<div className={classes.inputGeral}>
 					<div className={classes.inputTexto}>
-						Peso
-						<input
-							type="number"
-							className={classes.input}
-							min={40}
-							max={150}
-							step={1}
-							value={peso}
-							maxLength={3}
-							onChange={(e) => setPeso(e.target.value)}
-						/>{" "}
-						kg
+						<center>
+							Peso
+							<input
+								type="number"
+								className={classes.input}
+								min={40}
+								max={150}
+								step={1}
+								value={peso}
+								maxLength={3}
+								onChange={(e) => setPeso(e.target.value)}
+							/>{" "}
+							kg
+						</center>
 					</div>
 				</div>
 			</div>
