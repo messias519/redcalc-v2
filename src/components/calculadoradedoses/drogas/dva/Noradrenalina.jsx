@@ -76,7 +76,7 @@ export default function Noradrenalina() {
 	const [VolumeTotal, setVolumeTotal] = useState(250);
 	const [ConcentracaoAmpola, setConcentracaoAmpola] = useState(1);
 	const [DoseMin] = useState(0.01);
-	const [DoseMax] = useState(4);
+	const [DoseMax] = useState(0.4);
 
 	const ConcentracaoFinal =
 		((ConcentracaoAmpola * VolumeDeDroga) / VolumeTotal) * 1000;
